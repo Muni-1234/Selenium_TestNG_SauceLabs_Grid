@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Hub spot Test Automation Regresion Suite"
+	thread-count="4" parallel="tests" verbose="3">
+
+	<test name="Login Page Test windows 10 - firefox">
+		<parameter name="browser" value="firefox" />
+		<parameter name="platform" value="windows 10" />
+		<classes>
+			<class name="com.mytests.SauceTest" />
+		</classes>
+	</test>
+
+	<test name="Login Page Test on macOS - chrome">
+		<parameter name="browser" value="chrome" />
+		<parameter name="platform" value="macOS 10.15" />
+		<classes>
+			<class name="com.mytests.SauceTest" />
+		</classes>
+	</test>
+	
+</suite>
